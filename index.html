@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/4bf0249a18.js" crossorigin="anonymous"></script>
+    <!-- Daisy-UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind-cssFramework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customized style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-bg': '#F85559'
+              
+            }
+          }
+        }
+      }
+    </script>
+    <!-- customized-style -->
+    <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Fruits Burst</title>
+</head>
+<body class="bg-white">
+    <header>
+      <section class="flex justify-center mt-10 lato">
+        <nav class="bg-primary-bg rounded-full w-[1050px] p-5 text-white">
+          <div class="navbar">
+            <div class="navbar-start">
+                <ul class="menu-horizontal px-1 flex gap-5">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center flex gap-4">
+              <img src="images/logo.png" alt="">
+              <a class="normal-case text-3xl font-bold">Fruits Burst</a>
+            </div>
+            <div class="navbar-end pr-10">
+              <div class="form-control flex">
+                <input type="text" placeholder="Search" class="input rounded-full bg-white"/>
+              </div>
+              <i class="fa-solid fa-magnifying-glass relative right-8" style="color: #151516;"></i>
+            </div>
+          </div>
+        </nav>
+      </section>
+      
+      <section class="flex justify-center mt-20">
+        <div class="carousel w-[1000px]" >
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/banner1.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute top-10 left-0 w-full h-full text-center text-white">
+              <p class="text-7xl font-extrabold">Exotic tastes at your <br> doorstep</p>
+              <p class="text-lg pt-2">We supply highly quality organic products</p>
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          
+          </div> 
+          
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute top-10 left-0 w-full h-full text-center text-white">
+              <p class="text-7xl font-extrabold">Exotic tastes at your <br> doorstep</p>
+              <p class="text-lg pt-2">We supply highly quality organic products</p>
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          
+          </div> 
+          
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute top-10 left-0 w-full h-full text-center text-white">
+              <p class="text-7xl font-extrabold">Exotic tastes at your <br> doorstep</p>
+              <p class="text-lg pt-2">We supply highly quality organic products</p>
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          
+          </div> 
+          
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute top-10 left-0 w-full h-full text-center text-white">
+              <p class="text-7xl font-extrabold">Exotic tastes at your <br> doorstep</p>
+              <p class="text-lg pt-2">We supply highly quality organic products</p>
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+        
+      </section>
+    <section class="flex justify-center">
+    <div class="flex gap-10 rounded-lg p-5 shadow-2xl relative bottom-10 bg-white ">
+      
+      <img class="w-16" src="images/fruit1.png" alt="">
+      <img class="w-16" src="images/fruit2.png" alt="">
+      <img class="w-16" src="images/fruit3.png" alt="">
+      <img class="w-16" src="images/fruit4.png" alt="">
+      <img class="w-16" src="images/fruit5.png" alt="">
+      <img class="w-16" src="images/fruit6.png" alt="">
+    </div>
+     
+    </section>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
